@@ -52,20 +52,18 @@
     }
   }
 }
-
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  padding: 0 10px;
 
   &.open {
     visibility: visible;
   }
 
   .menu-nav {
+    border-bottom: 2.5px solid $secondary-color; // border-bottom: 1.5px solid $primary-color;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -87,7 +85,7 @@
       @include transition-ease;
 
       &.open {
-       transform: translateX(0); 
+        transform: translateX(0);
       }
 
       &.active > a {
