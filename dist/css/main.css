@@ -143,27 +143,32 @@ table {
 }
 
 .home__name {
-  position: relative;
-  top: 65%;
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  position: absolute;
+  bottom: -10rem;
+  font-size: 10rem;
+  text-align: center;
+  width: 100vw;
+  text-shadow: #2e2e2e 0 4px 5px;
 }
 
 .home__name--last {
   margin-top: 2.5%;
   color: #ff652f;
   text-shadow: #2e2e2e 0 4px 5px;
-  font-weight: 900;
 }
 
 .home_topWrapper {
-  height: 35vh;
+  position: relative;
+  height: 39vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 101, 47, 0.7)), to(rgba(255, 101, 47, 0.8)));
+  background-image: linear-gradient(rgba(255, 101, 47, 0.7), rgba(255, 101, 47, 0.8));
 }
 
-.home_topWrapper p {
+.home_topWrapper h2 {
   position: relative;
-  top: 40%;
+  top: 20%;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .home_middleWrapper {
@@ -172,8 +177,9 @@ table {
 }
 
 .home_bottomWrapper {
-  height: 60vh;
-  background-color: #fff;
+  height: 40vh;
+  background-image: url("/dist/img/wheel.jpg");
+  background-position: center;
 }
 
 .menu-btn {
@@ -242,7 +248,7 @@ table {
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
-  padding: 0 10px;
+  z-index: 100;
 }
 
 .nav.open {
@@ -250,7 +256,7 @@ table {
 }
 
 .nav .menu-nav {
-  border-bottom: 2.5px solid #ff652f;
+  border-bottom: 2.5px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +270,6 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   overflow: hidden;
   background: #272727;
   list-style-type: none;
